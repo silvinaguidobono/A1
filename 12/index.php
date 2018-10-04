@@ -8,12 +8,9 @@
         <h1>Ejercicio 12</h1>
 
 <?php
-    $archivo = file('http://typoestudio.com');
+    $archivo = file('http://sguidobono.cesnuria.com/A1/9/');
     foreach ($archivo as $numeroLinea => $linea) {
         echo "<b>Linea Nro.{$numeroLinea}</b> ".htmlspecialchars($linea)."<br>"; 
-        if($numeroLinea > 10){
-            break;
-        }
     }
 ?>
     </body>

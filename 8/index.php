@@ -8,12 +8,6 @@
         <h1>Ejercicio 8</h1>
 
 <?php
-    $url="http://toni.cesnuria.com/php/php-basic-exercises.php";
-    echo "Scheme:".parse_url($url,PHP_URL_SCHEME)."<br>";
-    echo "Host:".parse_url($url,PHP_URL_HOST)."<br>";
-    echo "Path:".parse_url($url,PHP_URL_PATH)."<br>";
-    
-    
     // muestra el nombre del protocolo
     if (isset($_SERVER['SERVER_PROTOCOL'])){
         echo "<p>Schema: ".$_SERVER['SERVER_PROTOCOL']."</p>";

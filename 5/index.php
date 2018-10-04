@@ -11,13 +11,9 @@
     // muestra la dirección IP desde la cual está viendo la página actual
     // el usuario
     if (isset($_SERVER['REMOTE_ADDR'])){
-        echo "<p>The remote address is: ".$_SERVER['REMOTE_ADDR']."</p>";
+        echo "<p>The client ip address is: ".$_SERVER['REMOTE_ADDR']."</p>";
     }
-    // muestra el nombre del host del servidor donde se está ejecutando
-    // actualmente el script
-    if (isset($_SERVER['SERVER_NAME'])){
-        echo "<p>The server name is: ".$_SERVER['SERVER_NAME']."</p>";
-    }
+    
 ?>
     </body>
 </html> 
